@@ -193,6 +193,5 @@ extern "C" void app_main() {
     printf("CSI will not be collected. Check `idf.py menuconfig  # > ESP32 CSI Tool Config` to enable CSI");
 #endif
 
-    xTaskCreatePinnedToCore(&vTask_socket_transmitter_sta_loop, "socket_transmitter_sta_loop",
-                            10000, (void *) &is_wifi_connected, 100, &xHandle, 1);
-}
+xTaskCreatePinnedToCore(&vTask_socket_transmitter_sta_loop, "socket_transmitter_sta_loop",
+    8192, NULL, 5, &xHandle, 1);}

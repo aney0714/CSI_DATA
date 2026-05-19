@@ -3,3 +3,6 @@ sdkconfig
 sdkconfig.old
 .idea
 venv
+managed_components/
+
+.vscode/

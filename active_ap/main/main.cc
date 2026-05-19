@@ -12,7 +12,7 @@
 
 #include "lwip/err.h"
 #include "lwip/sys.h"
-
+#include "esp_mac.h"
 #include "../../_components/nvs_component.h"
 #include "../../_components/sd_component.h"
 #include "../../_components/csi_component.h"
